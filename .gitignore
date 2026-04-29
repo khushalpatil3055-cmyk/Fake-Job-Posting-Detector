@@ -1,7 +1,26 @@
+# Python
 venv/
 __pycache__/
-*.pkl
 *.pyc
+*.pyo
 .env
+
+# Jupyter
 .ipynb_checkpoints/
-node_modules/
+
+# ML Model (large file)
+*.pkl
+
+# Data (large file - don't push to GitHub)
+data/
+
+# React
+frontend/node_modules/
+frontend/build/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
