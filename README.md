@@ -271,8 +271,8 @@ Actual Fake             12              161
 ## 👨‍💻 Author
 
 **Khushal Patil**
-- LinkedIn: [khushalpatil3055](https://linkedin.com/in/khushalcodess)
-- GitHub: [khushalpatil3055-cmyk](https://github.com/khushalcodess)
+- LinkedIn: [khushalcodess](https://linkedin.com/in/khushalcodess)
+- GitHub: [khushalcodes](https://github.com/khushalcodess)
 
 ---
 
