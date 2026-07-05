@@ -203,7 +203,7 @@ export default function App() {
     setLoading(true);
     setResult(null);
     try {
-      const response = await fetch('http://127.0.0.1:8000/predict', {
+      const response = await fetch('https://fake-job-detector-api-sxwt.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
