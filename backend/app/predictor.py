@@ -1,11 +1,30 @@
 import pickle
-import numpy as np 
+import numpy as np
 from scipy.sparse import hstack
+import os
+import gdown
 
-with open('model.pkl','rb') as f:
+# Download model files if not present
+MODEL_PATH = 'model.pkl'
+TFIDF_PATH = 'tfidf.pkl'
+
+if not os.path.exists(MODEL_PATH):
+    gdown.download(
+        'https://drive.google.com/uc?id=1rohCx84GAxU0TmuYjXEcpdNPkN2FaPCr',
+        MODEL_PATH, quiet=False
+    )
+
+if not os.path.exists(TFIDF_PATH):
+    gdown.download(
+        'https://drive.google.com/uc?id=1W3iRqgvAau9IYhdrxLFcYbx_DOOk_bxg',
+        TFIDF_PATH, quiet=False
+    )
+
+# Load model and tfidf
+with open(MODEL_PATH, 'rb') as f:
     model = pickle.load(f)
-    
-with open('tfidf.pkl','rb') as f:
+
+with open(TFIDF_PATH, 'rb') as f:
     tfidf = pickle.load(f)
     
 ALL_COLUMNS = ['telecommuting', 'has_company_logo', 'has_questions', 
